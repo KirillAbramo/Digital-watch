@@ -9,7 +9,7 @@ setInterval(() => {
     mn++;
     let yy = d.getFullYear();
     getId('watch').innerText = (hh < 10 ? '0' + hh : hh) + ':' + (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
-    getId('date').innerText = dd + '.' + (mn < 10 ? '0' + mn : mn) + '.' + yy;
+    getId('date').innerText = (dd<10? '0'+ dd: dd)  + '.' + (mn < 10 ? '0' + mn : mn) + '.' + yy;
 
 });
 
